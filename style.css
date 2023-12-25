@@ -1,0 +1,195 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Rubik,sans-serif;
+	font-size:  18px;
+	/*transition: all 1s ease-in-out;*/
+}
+.container{
+	background: url('./images/pattern-bg-desktop.png') no-repeat ;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	padding: 80px 0;
+	padding-bottom: 110px;
+	gap: 25px;
+}
+.container h1{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.container button{
+	padding: 15px 17px;
+	font-weight: 900;
+	font-size: 1.2em;
+	border: none;
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	background-color: hsl(0, 0%, 7%);
+	color: white;
+	cursor: pointer;
+}
+.container button:hover{
+background-color: hsl(0, 0%, 24%);
+}
+.container input{
+padding: 15px;
+width: 35vw;
+border: none;
+border-top-left-radius: 9px;
+border-bottom-left-radius: 9px;
+outline: none;
+}
+.search{
+	display: flex;
+	width: 100%;
+	padding: 0 15px;
+	justify-content: center;
+}
+.infoboard{
+position: absolute;
+background-color: rgb(255, 255, 255);
+height: 120px;
+width: 70vw;
+bottom: -25%;
+border-radius: 10px;
+box-shadow: 0px 10px 30px #39393910;
+display: flex;
+padding: 20px;
+flex-wrap: wrap;
+z-index: 99;
+}
+
+.dit{
+	flex-grow: 1;
+	border-right:1px solid rgba(148, 148, 148, 0.307) ;
+	padding: 0px 10px;
+}
+.dit:last-child{
+		border-right:0px solid rgba(148, 148, 148, 0.307) ;
+}
+.dit h6{
+	font-size: 15px;
+	color: rgb(100, 100, 100);
+	letter-spacing: 1px;
+}
+.dit h2{
+	font-size: clamp(14px, 1.5rem, 20px);
+	font-weight: 500;
+	padding-top: 10px;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.mapZone{
+	/*background-color: aqua;*/
+	width: 100%;
+	height: 70vh;
+	z-index: 50;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:675px) {
+.dit h6{
+	font-size: 11px;
+	color: rgba(100, 100, 100, 0.775);
+	text-transform: uppercase;
+}
+.dit h2{
+	font-size: 15px;
+	font-weight: 500;
+	padding-top: 10px;
+	text-align: center;
+}
+.dit{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.container{
+background: url('./images/pattern-bg-mobile.png') no-repeat ;
+background-position: center;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+position: relative;
+padding: 20px 0;
+padding-bottom: 140px;
+gap: 25px;
+}
+.container input{
+padding: 15px;
+width: 100%;
+border: none;
+border-top-left-radius: 9px;
+border-bottom-left-radius: 9px;
+outline: none;
+}
+.dit{
+	flex-grow: 1;
+	text-align: center;
+	border: none;
+}
+.infoboard{
+position: absolute;
+height: max-content;
+width: 90%;
+bottom: -180px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+}
+
+
+.toast{
+	background-color: rgb(254, 254, 254);
+	width: 350px;
+	border-radius: 5px;
+	padding: 10px 50px;
+	box-shadow: 0 5px 10px #0000004d;
+
+}
+.toastZone{
+	justify-content: center;
+	padding: 50px;
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	display: flex;
+}
+.show{
+	top: 0;
+}
